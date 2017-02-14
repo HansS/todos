@@ -4,6 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/switchMap';
+import 'rxjs/add/operator/do';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { appRoutes } from './app.routing';

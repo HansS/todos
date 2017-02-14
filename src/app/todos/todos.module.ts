@@ -7,13 +7,14 @@ import { RouterModule } from '@angular/router';
 
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoDetailsComponent } from './todo-details/todo-details.component';
+import { TodoCreateComponent } from './todo-create/todo-create.component';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(todoRoutes)
   ],
-  declarations: [TodosComponent,TodoListComponent, TodoDetailsComponent],
+  declarations: [TodosComponent,TodoListComponent, TodoDetailsComponent, TodoCreateComponent],
   exports: [RouterModule,TodosComponent],
   providers: [TodoService]
 })
